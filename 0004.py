@@ -1,0 +1,6 @@
+n = int(input())
+l = list(map(int, input().split()))
+w = list(map(int, input().split()))
+a = list(range(1, n+1))
+a.sort(key=lambda i: l[i-1] / w[i-1])
+print(" ".join(map(str, a)))
